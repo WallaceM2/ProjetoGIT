@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Javascript</title>
+		<script>
+
+
+			//15/01/2017
+			var data1 = new Date(2017, 0, 15,);
+
+			//23/02/2017
+			var data2 = new Date(2017, 1, 23,);
+
+			document.write(data1.toString());
+			document.write('<hr />');
+			document.write(data2.toString());
+
+			document.write('<br /><br /><hr />');
+			//Converter as datas para algo que possamos calcular.
+			document.write(data1.getTime());
+			document.write('<hr />');
+			document.write(data2.getTime());
+
+			//getTime ele calcula os milisegundos da data X para data Y
+			document.write('<br /><br /><hr />');
+			//Encontrar a quantidade de milisegundos entre as datas.
+			document.write('<br /><br /><hr />');
+
+			var milisegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime());
+			document.write(milisegundos_entre_datas);
+
+			document.write(Math.abs(data1.getTime() - data2.getTime()));
+			//Agora é descobrir quantos dias essa quantidade de milisegundos representa
+			//1 dia = 24hrs, 1hr = 60 minutos, cada 1 minuto = 60 segundos, 1 segundo = 1000 milisegundos
+			//questao é quantos milisegundos existem em um dia.
+			var milisegundos_por_dia = (1*24*60*60*1000);
+			document.write(' 1 dia tem ' + milisegundos_por_dia + ' Milisegundos ');
+
+			document.write('<br /><br /><hr />');
+
+			document.write('A diferença entre data 1 e data 2 é de ' + Math.ceil(milisegundos_entre_datas / milisegundos_por_dia) + ' dias ');
+
+
+
+			/*var data = new Date()
+
+			//document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
+			//15.05.2023
+
+			//adicionar ou remover dias da data
+
+			document.write(data.toString())
+			data.setDate(data.getDate() + 1)
+			document.write('<hr />')
+			document.write(data.toString())
+			document.write('<br /> <br / ><hr / >')
+
+			//adicionar ou remover meses
+
+			document.write(data.toString())
+			data.setMonth(data.getMonth() + 1)
+			document.write('<hr />')
+			document.write(data.toString())
+			document.write('<br /><br /><hr />')
+
+			//adicionar ou remover anos
+
+			document.write(data.toString())
+			data.setFullYear(data.getFullYear() - 1)
+			document.write('<hr />')
+			document.write(data.toString()) */
+
+		</script>
+
+	</head>
+	<body>
+
+	</body>
+</html>

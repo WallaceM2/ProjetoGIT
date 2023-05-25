@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS</title>
+		<script>
+
+			//var listaFuncionarios = ['Louise', 'Wallace', 'Ana', 'Pai', 'Mae'];
+			var listaFuncionarios = Array()
+
+			listaFuncionarios['a'] = 'Louise'
+			listaFuncionarios[false] = 'Wallace'
+			listaFuncionarios[-3] = 'Ana'
+			listaFuncionarios[12] = 'Pai'
+			listaFuncionarios[5029] = 'Mae'
+
+			var f = function(valor, indice) {
+				console.log(valor, indice)
+			}
+
+			listaFuncionarios.forEach(f)  //---> boa opçao para deixar o codigo mais legivel. ForEach so atua em numeros partindo do "0"
+
+
+
+
+			/*
+			console.log(listaFuncionarios)
+			document.write(listaFuncionarios[4])
+
+			listaFuncionarios.forEach(function(valor, indice, array) {
+				//logica
+			console.log(' indice: ' + indice + ' | valor: ' + valor)
+
+			if (valor == 'Mae') {
+				array[indice] = 'Um novo valor'
+			}
+			})
+
+			console.log(listaFuncionarios)
+			document.write('<br /> ' + listaFuncionarios[4]) */
+
+
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

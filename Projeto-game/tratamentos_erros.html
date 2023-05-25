@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Javascript</title>
+		<script>
+
+			//netflix
+			var video = Array()
+
+			video[1] = Array()
+			video[1]['nome'] = 'FairyTail'
+			video[1]['categoria'] = 'Anime'
+
+			function getVideo(video) {
+
+				
+			  try { // --> starta pelo try 
+
+				//logica
+				//requisição http:
+				console.log(video[0]['nome'])
+
+			    } catch(erro) { //--> depois vem o catch para caçar o erro / responsavel por nao deixar o error interromper o script
+			    	tratarErro(erro)
+			   		console.log('Agora sim podemos tratar esse erro')
+			   		throw new Error('Houve um erro mas nao se preocupe, estamos trabalhando nisso agora!!!') 
+			   		//throw nao força o script a funcionar com o error, travando ele onde o mesmo se aplica.
+
+				} finally { //--> pode ir direto do try para cá em caso de erro, tem que passar pelo catch
+					console.log('Sempre passar por aqui (try / catch)')
+				}
+
+				console.log('A aplicação nao morreu')
+			}
+
+				function tratarErro (e) {
+					//logica para registrar o erro no servidor
+					console.log(e)
+				}
+
+			getVideo(video)
+
+		</script>
+
+	</head>
+	<body>
+
+	</body>
+</html>

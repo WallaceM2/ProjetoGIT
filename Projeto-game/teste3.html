@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS</title>
+	<script>
+
+		var lista_objetos = Array('Cadeira', 'Impressora', 'Monitor');
+
+		function adicionarObejtos () {
+			//recuperar o valor inserido no campo id objeto
+		var document.getElementById('objeto').value
+			//caso possua algum valor preenchido entra no if
+		if (Objeto !='') {
+			//verifica se o valor já não foi inserido anteriormente
+			//se sim, informa que valor já existe, se não insere novo valor
+		if (objetos.indexOf(objeto) !== -1) {
+			alert('Objeto ja foi adicionado')
+		} else {
+			objetos.push(objeto)
+			console.log(lista_objetos);
+			document.getElementById('objeto').value 
+		}
+		} else {
+			alert('Informe um objeto valido')
+
+		 }
+		}
+
+		function ordenarObjetos () {
+			objetos.sort()
+			console.log (objetos)
+
+		}
+
+		
+
+		
+	</script>
+</head>
+<body>
+	<input type="text" id="objeto">
+	<button onclick="adicionarObjetos()">Adicionar</button>
+	<button onclick="ordenarObjetos()">Ordenar</button>
+
+</body>
+</html>

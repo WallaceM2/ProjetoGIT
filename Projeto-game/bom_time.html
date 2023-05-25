@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Javascript</title>
+		<script>
+
+		//setTimeout(function() { document.write('Teste') }, 2000)    //--> vai so 1 no timing de 2seg
+
+			var i = 5
+
+		var x = setInterval(function() { 
+		document.write(i) 
+		i-- 
+
+		if(i === 0) {
+
+			clearInterval(x)
+		  }
+
+		}, 1000)  //--> vai se repetindo no timing de 2seg
+
+		</script>
+
+	</head>
+	<body>
+
+		
+	</body>
+</html>
